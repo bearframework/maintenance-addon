@@ -1,0 +1,21 @@
+{
+    "name": "bearframework/maintenance-addon",
+    "description": "Maintenance addon for Bear Framework",
+    "keywords": ["maintenance", "addon", "Bear Framework"],
+    "homepage": "https://github.com/bearframework/maintenance-addon",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Ivo Petkov",
+            "email": "ivo@ivopetkov.com",
+            "homepage": "http://ivopetkov.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.5.0",
+        "bearframework/bearframework": "0.8.*"
+    },
+    "autoload": {
+        "files": ["autoload.php"]
+    }
+}
