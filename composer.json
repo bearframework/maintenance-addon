@@ -1,7 +1,7 @@
 {
     "name": "bearframework/maintenance-addon",
     "description": "Maintenance addon for Bear Framework",
-    "keywords": ["maintenance", "addon", "Bear Framework"],
+    "keywords": ["maintenance", "Bear Framework addon"],
     "homepage": "https://github.com/bearframework/maintenance-addon",
     "license": "MIT",
     "authors": [
