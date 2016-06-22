@@ -227,7 +227,10 @@ class Addons
             $id = $this->getIDFromAutoloadFile(file_get_contents($tempAddonDir . 'autoload.php'));
             $addonDir = $directory . DIRECTORY_SEPARATOR . $id . DIRECTORY_SEPARATOR;
             if (!is_dir($addonDir)) {
-                mkdir($addonDir, 0777, true);
+                $result = mkdir($addonDir, 0777, true);
+                if ($result === false) {
+                    throw new \Exception('Cannot create addon dir (' . $addonDir . ')');
+                }
             }
             if (!\BearFramework\Maintenance\Utilities::compareFiles($addonDir, $tempAddonDir)) {
                 \BearFramework\Maintenance\Utilities::moveToRecycleBin($directory, $id);
